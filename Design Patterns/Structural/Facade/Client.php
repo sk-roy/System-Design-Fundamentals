@@ -1,15 +1,17 @@
 <?php
 
+
 namespace design_pattern\structural\facade;
 
+require_once('RestaurantKeeper.php');
 
-    $hotelKeeper = new HotelKeeperImplementation();
+    $hotelKeeper = new RestaurantKeeper();
     
-    $vegMenu = $hotelKeeper.getVegMenu();
-    $nonVegMenu = $hotelKeeper.getNonVegMenu();
-    $bothVegNonVeg = $hotelKeeper.getVegNonVegMenu();
+    $vegMenu = $hotelKeeper->getVegMenu();
+    $nonVegMenu = $hotelKeeper->getNonVegMenu();
+    $bothVegNonVeg = $hotelKeeper->getVegNonVegMenu();
 
 
-    echo "Veg Menu \t:" . $vegMenu;
-    echo "Non-Veg Menu \t:" . $nonVegMenu;
-    echo "Both Veg & Non-Veg Menu \t: " . $bothVegNonVeg;
+    echo "Veg Menu \t:" . $vegMenu . PHP_EOL;
+    echo "Non-Veg Menu \t:" . $nonVegMenu . PHP_EOL;
+    echo "Both Veg & Non-Veg Menu \t: " . $bothVegNonVeg . PHP_EOL;

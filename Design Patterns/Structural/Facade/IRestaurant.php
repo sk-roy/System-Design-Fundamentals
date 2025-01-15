@@ -2,6 +2,6 @@
 
 namespace design_pattern\structural\facade;
 
-interface Restaurent {
-    public getMenus();
+interface IRestaurant {
+    public function getMenus();
 }
