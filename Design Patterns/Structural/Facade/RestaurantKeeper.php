@@ -1,6 +1,5 @@
 <?php
 
-namespace design_pattern\structural\facade;
 require_once('IRestaurantKeeper.php');
 require_once('VegRestaturant.php');
 require_once('NonVegRestaurant.php');

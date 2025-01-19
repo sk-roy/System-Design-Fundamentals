@@ -1,7 +1,5 @@
 <?php
 
-
-namespace design_pattern\structural\facade;
 require_once('Restaurant.php');
 
 class BothVegNonVegRestaurant extends Restaurant {
